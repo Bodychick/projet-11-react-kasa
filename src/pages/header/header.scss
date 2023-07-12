@@ -1,0 +1,35 @@
+$color-principal: #FF6060;
+*{
+  box-sizing: border-box;  
+}
+
+.header {
+    width: 95%;
+    margin: auto;
+    color:$color-principal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 45px;
+    ul{
+        font-size: 18px;
+        list-style-type: none;
+        li{
+            display: inline;
+        }
+        a{
+            text-decoration: none;
+            color:$color-principal ;
+        }
+        :first-child{
+            margin-right: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width : 1080px) {
+    .header {
+        width: 80%;
+        margin: auto;
+    }
+ }

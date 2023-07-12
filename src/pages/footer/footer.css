@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  color: white;
+  padding: 30px 50px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer img {
+  margin: auto auto 15px auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100px;
+  height: auto;
+}/*# sourceMappingURL=footer.css.map */
