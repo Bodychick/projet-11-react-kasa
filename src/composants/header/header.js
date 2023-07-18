@@ -1,5 +1,5 @@
 import './header.css'
-import logo from '../assets/logo_kasa_orange.svg'
+import logo from '../../assets/logo_kasa_orange.svg'
 
 function Header(){
     return(
