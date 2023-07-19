@@ -1,10 +1,15 @@
 .logements {
+    
     display: flex;
     flex-flow: row wrap;
     width: 80%; 
-    margin: auto;
-    gap: 50px;
-    padding-bottom: 50px;
+    margin: 30px auto 30px auto;
+    gap: 4%;
+    row-gap: 25px;
+    background-color: rgba(243, 240, 240, 0.733);
+    padding: 50px;
+    border-radius: 30px;
+
     article{
         width: 30%;
         height: 300px;
@@ -25,3 +30,33 @@
         }
     }
 } 
+@media only screen and (max-width: 767px) {
+    //Mobile
+        .logements{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 95%;
+            padding: 0px;
+            background-color: white;
+            article{
+                margin: auto;
+                width: 95%;
+            }
+        }
+    }
+
+@media (768px <= width <1024px)  {
+    //Tablette
+    .logements{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 80%;
+        padding: 0px;
+        background-color: white;
+        article{
+            margin: auto;
+            width: 48%;
+        }
+    }
+}
+

@@ -14,10 +14,10 @@ function CareScale(props) {
 
 	return (
         <div>
-        		{range.map((rangeElem) =>
+        		{range.map((rangeElem, index) =>
 				props.rating >= rangeElem ? (
-					<i class="fa-solid fa-star" style={styleOrange}></i> 
-				) : <i class="fa-solid fa-star" style={styles}></i> 
+					<i key={index} className="fa-solid fa-star" style={styleOrange}></i> 
+				) : <i key={index} className="fa-solid fa-star" style={styles}></i> 
 			)}
 		</div>
 	)

@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, Redirect } from 'react-router-dom';
+import NotFound from '../404/404';
 import logements from '../../datas/logements'
 //import Banner from '../../composants/Banner'
 import './article.css'
 import CareScale from '../../composants/CareScale';
 import Carousel from '../../composants/carroussel/carroussel';
+import Tags from '../../composants/tags/tags'
+import Dropdown from '../../composants/dropdown/dropdown'
 
 function Article(){
     const [logement, setLogement] = useState(null);
@@ -21,7 +25,7 @@ function Article(){
 
   //Si pas de logement chargement
   if(!logement){
-    return (<div>chargement ...</div>)
+    return ( <NotFound/>  )
   }
   
     // Afficher les informations du logement trouvé
@@ -32,6 +36,7 @@ function Article(){
           <section className='logement'>
             <h1>{logement.title}</h1>
             <p className='location'>{logement.location}</p>
+            <Tags tags={logement.tags}/>
           </section>
           <aside className='proprietaire'>
             <div className='infoProprietaire'>
@@ -40,6 +45,8 @@ function Article(){
             </div>
           <CareScale rating={logement.rating}/>
           </aside>
+          <Dropdown dropdown={logement.description} titre='Description'/>
+          <Dropdown dropdown={logement.equipments} titre='Equipement'/>
         </div>
       </section>
       

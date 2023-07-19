@@ -1,0 +1,12 @@
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    .tag {
+        background-color: #FF6060;
+        color:white;
+        padding: 5px 10px;
+        border-radius: 40px;
+    }
+}

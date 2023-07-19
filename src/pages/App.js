@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NotFound from './404/404';
 import Home from './home/home'
 import Article from './article/article'
+import About from './about/about'
 
 
 function App() {
@@ -15,10 +16,12 @@ function App() {
       <Header />  
         <Router>
             <Routes>
-                <Route path="/404" element={<NotFound />} />
+                <Route path="/*" element={<NotFound />} />
                 <Route path="/" element={<Home />} />
                 <Route path="/logement" element={<Article />} />
+                <Route path="/about" element={<About />} />
             </Routes>
+
         </Router>
       <Footer />
     </div>

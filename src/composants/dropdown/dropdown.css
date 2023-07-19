@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* Styles pour le chevron */
+.chevron {
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+/* Styles pour le chevron en position ouverte */
+.open .chevron {
+  transform: rotate(180deg);
+}
+
+/* Styles pour cacher le contenu par défaut */
+.collapse-content {
+  display: none;
+}
+
+/* Styles pour afficher le contenu lorsque la classe "open" est appliquée */
+.open .collapse-content {
+  display: block;
+}/*# sourceMappingURL=dropdown.css.map */

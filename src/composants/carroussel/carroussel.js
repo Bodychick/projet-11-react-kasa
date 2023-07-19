@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './carroussel.css'; // Assurez-vous d'avoir le fichier CSS approprié pour le style du carrousel
+import './carroussel.css'; 
 
 function Carousel(props) {
   const [activeIndex, setActiveIndex] = useState(0);

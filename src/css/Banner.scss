@@ -2,12 +2,34 @@
     margin: auto;
     height: 230px;
     border-radius: 20px;
-    padding-bottom: 50px;
     width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        position: absolute;
+        font-size: 35px;
+        color:white;
+    }
     img{
+        position: relative;
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 20px;
     }
+}
+
+@media only screen and (max-width: 900px)  {
+    .lmj-banner{
+        width: 95%;
+        justify-content: flex-start;
+        height: 150px;
+        h1{
+            padding-left: 20px;
+            width: 95%;
+            text-align: left;
+        }
+    }
+    
 }
