@@ -1,0 +1,46 @@
+.contenu {
+  padding-bottom: 50px;
+}
+
+.headerArticle {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.logement {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.logement h1 {
+  color: #FF6060;
+}
+.logement .location {
+  color: #FF6060;
+}
+.logement h1, .logement .location {
+  width: 100%;
+  text-align: left;
+}
+
+.proprietaire .infoProprietaire {
+  display: flex;
+  flex-direction: row;
+  color: #FF6060;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.proprietaire .infoProprietaire p {
+  margin-right: 20px;
+}
+.proprietaire .infoProprietaire img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}/*# sourceMappingURL=article.css.map */

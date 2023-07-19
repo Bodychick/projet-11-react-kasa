@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import logements from '../../datas/logements'
-import Banner from '../../composants/Banner'
-import bannerImage from '../../assets/lake-checrouit.jpg'
-import { useParams } from 'react-router-dom'
+//import Banner from '../../composants/Banner'
+import './article.css'
+import CareScale from '../../composants/CareScale';
+import Carousel from '../../composants/carroussel/carroussel';
 
 function Article(){
     const [logement, setLogement] = useState(null);
@@ -18,21 +19,32 @@ function Article(){
     setLogement(logementTrouve);
   }, []);
 
-  // Vérifier si le logement a été trouvé ou non
-  if (!logement) {
-    return <div>Chargement...</div>;
+  //Si pas de logement chargement
+  if(!logement){
+    return (<div>chargement ...</div>)
   }
   
     // Afficher les informations du logement trouvé
     return (
-      <div>
-        <Banner lien={logement.cover} />
-        <h1>{logement.title}</h1>
-        <p>{logement.description}</p>
-      </div>
+      <section className='contenu'>
+        <Carousel items={logement.pictures}/>
+        <div className='headerArticle'>
+          <section className='logement'>
+            <h1>{logement.title}</h1>
+            <p className='location'>{logement.location}</p>
+          </section>
+          <aside className='proprietaire'>
+            <div className='infoProprietaire'>
+              <p>{logement.host.name}</p>
+              <img className='picture' src={logement.host.picture} alt='propriétaire'/>
+            </div>
+          <CareScale rating={logement.rating}/>
+          </aside>
+        </div>
+      </section>
+      
     );
   };
-  
 
 export default Article
 

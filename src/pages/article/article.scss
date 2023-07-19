@@ -1,0 +1,54 @@
+.contenu {
+    padding-bottom: 50px;
+}
+.headerArticle {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.logement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    h1 {
+        color :#FF6060;
+    }
+    .location {
+        color :#FF6060;
+    }
+    h1, .location{
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.proprietaire {
+    .infoProprietaire{
+        display:flex;
+        flex-direction: row;
+        color :#FF6060;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        p{
+            margin-right:20px ;
+        }
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px)  {
+
+    
+}
+
+
