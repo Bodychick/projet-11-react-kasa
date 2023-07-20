@@ -1,21 +1,16 @@
 import './home.css'
 import logements from '../../datas/logements'
-import Banner from '../../composants/Banner'
+import Banner from '../../composants/Banner/Banner'
 import bannerImage from '../../assets/lake-checrouit.jpg'
+import Card from '../../composants/card/card'
 
 function Home(){
     return(
         <div>
-        <Banner lien={bannerImage}/>
+        <Banner lien={bannerImage} titre='Chez vous, partout et ailleurs'/>
         <section className='logements'>
             {logements.map(({ id, title, cover }) =>
-                  			
-						<article key={id}>
-                <a href={`/logement?id=${id}`}>
-                    <img src={cover} alt={title}/>
-                    <h2>{title}</h2>
-                </a>	
-						</article>
+             <Card titre={title} cover={cover} id={id}/>
 				)}
         </section>
 

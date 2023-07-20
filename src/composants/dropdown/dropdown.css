@@ -1,9 +1,34 @@
 @charset "UTF-8";
-/* Styles pour le chevron */
+/*Styles entete collapse*/
+.collapse-container {
+  margin: auto;
+  margin-top: 40px;
+  width: 40%;
+}
+.collapse-container ul {
+  list-style: none;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+.collapse-header {
+  border-radius: 10px;
+  padding: 10px 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FF6060;
+  margin-bottom: 0;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+}
+
 .chevron {
   display: inline-block;
   transform: rotate(0deg);
   transition: transform 0.3s ease;
+  color: white;
 }
 
 /* Styles pour le chevron en position ouverte */
@@ -13,10 +38,27 @@
 
 /* Styles pour cacher le contenu par défaut */
 .collapse-content {
+  margin-top: 0;
   display: none;
+  padding: 20px;
+  color: #FF6060;
+  background-color: rgba(211, 211, 211, 0.555);
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  margin-top: -10px;
+  border-radius: 0 0 10px 10px;
+  z-index: 1;
+  position: relative;
 }
 
 /* Styles pour afficher le contenu lorsque la classe "open" est appliquée */
 .open .collapse-content {
   display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  .collapse-container {
+    width: 95%;
+  }
 }/*# sourceMappingURL=dropdown.css.map */

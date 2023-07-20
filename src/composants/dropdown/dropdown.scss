@@ -1,22 +1,68 @@
-/* Styles pour le chevron */
+/*Styles entete collapse*/
+.collapse-container {
+  margin: auto;
+  margin-top: 40px;
+  width: 40%;
+  ul {
+    list-style: none;
+    padding-inline-start: 0px;
+  }
+}
+.collapse-header{
+  border-radius: 10px;
+  padding:10px 10px;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FF6060;
+  margin-bottom: 0; 
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+}
+
 .chevron {
-    display: inline-block;
-    transform: rotate(0deg);
-    transition: transform 0.3s ease;
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+  color:white
+}
+
+/* Styles pour le chevron en position ouverte */
+.open .chevron {
+  transform: rotate(180deg);
+}
+
+/* Styles pour cacher le contenu par défaut */
+.collapse-content {
+  margin-top: 0;
+  display: none;
+  padding: 20px;
+  color:#FF6060;
+  background-color: rgba(211, 211, 211, 0.555);
+  text-align: left;
+  line-height: 1.50em;
+  font-size: 1.10em;
+  margin-top: -10px;
+  border-radius: 0 0 10px 10px;
+  z-index: 1;
+  position: relative;
+}
+
+/* Styles pour afficher le contenu lorsque la classe "open" est appliquée */
+.open .collapse-content {
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  //Mobile
+  .collapse-container {
+    width: 95%;
   }
-  
-  /* Styles pour le chevron en position ouverte */
-  .open .chevron {
-    transform: rotate(180deg);
-  }
-  
-  /* Styles pour cacher le contenu par défaut */
-  .collapse-content {
-    display: none;
-  }
-  
-  /* Styles pour afficher le contenu lorsque la classe "open" est appliquée */
-  .open .collapse-content {
-    display: block;
-  }
+}
+
+@media (768px <= width <1024px)  {
+
+}
+
   

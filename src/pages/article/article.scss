@@ -3,9 +3,17 @@
 }
 .headerArticle {
     display: flex;
-    width: 80%;
+    width: 70%;
     margin: auto;
     justify-content: space-between;
+}
+.dropdown{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin:40px auto auto auto;
+
 }
 
 .logement {
@@ -16,6 +24,7 @@
         color :#FF6060;
         font-size: 35px;
         margin-top: 15px;
+        margin-bottom: 0px;
     }
     .location {
         color :#FF6060;
@@ -27,6 +36,7 @@
 }
 
 .proprietaire {
+    min-width: 158px;
     .infoProprietaire{
         display:flex;
         flex-direction: row;

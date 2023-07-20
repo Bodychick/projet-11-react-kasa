@@ -1,1 +1,7 @@
-/*# sourceMappingURL=about.css.map */
+.about {
+  width: 80%;
+  margin: auto;
+}
+.about .collapse-container {
+  width: 70% !important;
+}/*# sourceMappingURL=about.css.map */
