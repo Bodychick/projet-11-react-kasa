@@ -17,8 +17,9 @@ function Carousel(props) {
   return (
     <div className="carousel">
       <div className="carousel-inner">
-        <button className='buttonPrev' onClick={prevSlide}>Précédent</button>
-        <button className="buttonNext" onClick={nextSlide}>Suivant</button>
+        <i className="fa-solid fa-chevron-left buttonPrev" onClick={prevSlide}></i>
+        <i className="fa-solid fa-chevron-right buttonNext" onClick={nextSlide}></i>
+        <p className='numberDiapo'>{activeIndex + 1}/{items.length}</p>
             {
             items.map((item, index) => (
                 <div

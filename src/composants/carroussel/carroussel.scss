@@ -38,13 +38,27 @@
     border-radius: 25px;
   }
 
-  .buttonPrev, .buttonNext {
+  .buttonPrev, .buttonNext,.numberDiapo {
     position: absolute;
     z-index: 999;
+    cursor: pointer;
+    color:white;
+    font-size: 30px;
   }
   .buttonNext {
-    right: 15px;
+    top: 50%;
+    right: 20px;
+    transform: translate(-50%,-50%);
   }
   .buttonPrev{
-    left:15px
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%,-50%);
+  }
+  .numberDiapo{
+    font-size: 16px !important;
+    color:white;
+    bottom:0px;
+    left:50%;
+    transform: translate(-50%,-50%);
   }
