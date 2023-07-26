@@ -7,8 +7,7 @@
 }
 .collapse-container ul {
   list-style: none;
-  -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
+  padding-inline-start: 0px;
 }
 
 .collapse-header {

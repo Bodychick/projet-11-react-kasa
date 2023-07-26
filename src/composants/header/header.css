@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px 45px;
+  padding: 30px 10px;
   align-items: center;
 }
 .header img {
@@ -36,8 +36,9 @@
 
 @media only screen and (min-width: 1080px) {
   .header {
-    width: 80%;
+    width: 75%;
     margin: auto;
+    padding: 30px 45px;
   }
   .header img {
     width: auto;

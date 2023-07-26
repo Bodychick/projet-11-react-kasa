@@ -3,12 +3,12 @@ function CareScale(props) {
 	const range = [1, 2, 3, 4, 5]
     const styles = {
         color: "#969696",
-        fontSize:"1.25em",
+        fontSize:"1.10em",
         padding:"4px"
     }
     const styleOrange = {
         color:"#FF6060",
-        fontSize:"1.25em",
+        fontSize:"1.10em",
         padding:"4px"
     }
 
