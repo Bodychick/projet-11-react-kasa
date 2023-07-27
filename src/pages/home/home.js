@@ -10,7 +10,7 @@ function Home(){
         <Banner lien={bannerImage} titre='Chez vous, partout et ailleurs'/>
         <section className='logements'>
             {logements.map(({ id, title, cover }) =>
-             <Card titre={title} cover={cover} id={id}/>
+             <Card key={id} titre={title} cover={cover} id={id}/>
 				)}
         </section>
 

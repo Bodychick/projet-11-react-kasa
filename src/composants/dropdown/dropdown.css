@@ -38,8 +38,7 @@
 /* Styles pour cacher le contenu par défaut */
 .collapse-content {
   margin-top: 0;
-  display: none;
-  padding: 20px;
+  padding: 0px;
   color: #FF6060;
   background-color: rgba(211, 211, 211, 0.555);
   text-align: left;
@@ -49,11 +48,16 @@
   border-radius: 0 0 10px 10px;
   z-index: 1;
   position: relative;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease;
+  max-height: 0px;
 }
 
 /* Styles pour afficher le contenu lorsque la classe "open" est appliquée */
 .open .collapse-content {
-  display: block;
+  max-height: 300px;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease;
+  padding: 20px;
 }
 
 @media only screen and (max-width: 767px) {
